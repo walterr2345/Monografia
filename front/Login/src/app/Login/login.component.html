@@ -1,0 +1,22 @@
+<div class="main">
+    <div class="main__container">
+        <div class="form">
+            <form [formGroup]="myForm" (ngSubmit)="submitDates()" class="formClass">
+                <h4 class="head">Login</h4>
+                <label>UserName</label>
+                <input formControlName="userName" class="formClass__box" type="text" placeholder="Nombre">
+                <label>Password</label>
+                <input formControlName="password" class="formClass__box" type="password" placeholder="Username">
+                <div class="card__form-element">
+                    <button type="submit" class="card__form-element__button">
+                        Iniciar sesion
+                    </button>
+                </div>
+                <div class="link">
+                    <a routerLink="/register">Registrar Usuario</a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
